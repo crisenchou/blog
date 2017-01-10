@@ -4,21 +4,21 @@ namespace App\Console\Commands;
 
 use Illuminate\Console\Command;
 
-class deploy extends Command
+class Deploy extends Command
 {
     /**
      * The name and signature of the console command.
      *
      * @var string
      */
-    protected $signature = 'command:name';
+    protected $signature = 'deploy:start';
 
     /**
      * The console command description.
      *
      * @var string
      */
-    protected $description = 'Command description';
+    protected $description = 'auto git pull origin master';
 
     /**
      * Create a new command instance.
@@ -37,6 +37,6 @@ class deploy extends Command
      */
     public function handle()
     {
-        //
+        return 'test';
     }
 }

@@ -2,6 +2,7 @@
 
 use Illuminate\Foundation\Inspiring;
 
+
 /*
 |--------------------------------------------------------------------------
 | Console Routes
@@ -16,3 +17,17 @@ use Illuminate\Foundation\Inspiring;
 Artisan::command('inspire', function () {
     $this->comment(Inspiring::quote());
 })->describe('Display an inspiring quote');
+
+
+Artisan::command('git:pull', function () {
+    $command = 'git pull origin master';
+    $info = system($command);
+    dump($info);
+})->describe('使用git pull 自动部署');
+
+Artisan::command('git:push', function () {
+    $command = 'git push origin master';
+    $info = system($command);
+    dump($info);
+})->describe('使用git push 自动部署');
+
