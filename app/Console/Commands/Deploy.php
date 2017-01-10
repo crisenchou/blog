@@ -11,7 +11,7 @@ class Deploy extends Command
      *
      * @var string
      */
-    protected $signature = 'deploy:start';
+    protected $signature = 'deploy:git {action}';
 
     /**
      * The console command description.
@@ -37,6 +37,9 @@ class Deploy extends Command
      */
     public function handle()
     {
-        return 'test';
+        $action = $this->argument('action');
+        $command = 'git ' . $action;
+        $info = system($command);
+        return $info;
     }
 }
