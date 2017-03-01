@@ -2,7 +2,7 @@
 
 @section('content')
     <div class="position-relative">
-        <div id="forgot-box" class="forgot-box widget-box no-border">
+        <div id="forgot-box" class="forgot-box visible widget-box no-border">
             <div class="widget-body">
                 <div class="widget-main">
                     <h4 class="header red lighter bigger">

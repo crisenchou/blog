@@ -72,7 +72,7 @@
 
                 <div class="toolbar clearfix">
                     <div>
-                        <a href="{{url('reset-password')}}"
+                        <a href="{{url('password/reset')}}"
                            class="forgot-password-link">
                             <i class="ace-icon fa fa-arrow-left"></i>
                             I forgot my password
