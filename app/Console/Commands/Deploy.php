@@ -11,7 +11,7 @@ class Deploy extends Command
      *
      * @var string
      */
-    protected $signature = 'deploy:git {action}';
+    protected $signature = 'git {action}';
 
     /**
      * The console command description.
