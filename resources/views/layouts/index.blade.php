@@ -1,34 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+    <meta charset="utf-8"/>
+    <title>Dashboard - Ace Admin</title>
+    <meta name="description" content="overview &amp; stats"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0"/>
+    @include('layouts.header')
+</head>
 
-@include('layouts.header')
 <body class="no-skin">
 
 @include('layouts.nav')
 <div class="main-container ace-save-state" id="main-container">
     <script type="text/javascript">
-        try{ace.settings.loadState('main-container')}catch(e){}
+        try {
+            ace.settings.loadState('main-container')
+        } catch (e) {
+        }
     </script>
 
     @include('layouts.sidebar')
-
     <div class="main-content">
         <div class="main-content-inner">
-          @include('layouts.breadcrumb')
+            @include('layouts.breadcrumb')
+            @yield('page-header')
             <div class="page-content">
                 @include('layouts.settings')
-                <div class="page-header">
-                    <h1>
-                        Dashboard
-                        <small>
-                            <i class="ace-icon fa fa-angle-double-right"></i>
-                            overview &amp; stats
-                        </small>
-                    </h1>
-                </div><!-- /.page-header -->
-                @yield('content')
-
+                @yield('page-content')
             </div><!-- /.page-content -->
+
         </div>
     </div><!-- /.main-content -->
 
