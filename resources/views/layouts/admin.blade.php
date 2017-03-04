@@ -1,6 +1,5 @@
 @extends('layouts.app')
 @section('title','crisen')
-@section('skin','no-skin')
 @section('head')
     @include('parts.css')
     @stack('css')

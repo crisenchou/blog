@@ -14,7 +14,7 @@
                         <option data-skin="skin-3" value="#D0D0D0">#D0D0D0</option>
                     </select>
                 </div>
-                <span>&nbsp; Choose Skin</span>
+                <span>选择皮肤</span>
             </div>
 
             <div class="ace-settings-item">
