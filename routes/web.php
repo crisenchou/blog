@@ -19,6 +19,9 @@ Auth::routes();
 
 Route::get('/home', 'HomeController@index');
 
+Route::get('/{name}', 'HomeController@page');
+
+
 
 Route::get('/deploy/pull', function () {
     $exitCode = Artisan::call('git', [

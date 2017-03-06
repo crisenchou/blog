@@ -1,5 +1,4 @@
 @extends('layouts.login')
-
 @section('content')
     <div class="position-relative">
         <div id="login-box" class="login-box visible widget-box no-border">
