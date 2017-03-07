@@ -35,8 +35,7 @@
             }
         </script>
 
-        <div id="sidebar"
-             class="sidebar      h-sidebar                navbar-collapse collapse          ace-save-state">
+        <div id="sidebar" class="sidebar h-sidebar navbar-collapse collapse ace-save-state">
             <script type="text/javascript">
                 try {
                     ace.settings.loadState('sidebar')
@@ -46,8 +45,6 @@
             @include('parts.menus')
 
         </div>
-
-
         <div class="main-content">
             <div class="main-content-inner">
                 @yield('breadcrumbs')
@@ -56,10 +53,6 @@
         </div><!-- /.main-content -->
 
         @include('parts.footer')
-
-        <a href="#" id="btn-scroll-up" class="btn-scroll-up btn btn-sm btn-inverse">
-            <i class="ace-icon fa fa-angle-double-up icon-only bigger-110"></i>
-        </a>
     </div><!-- /.main-container -->
 @endsection
 @section('scripts')

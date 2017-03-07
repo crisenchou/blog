@@ -1,24 +1,11 @@
 <div class="footer">
     <div class="footer-inner">
         <div class="footer-content">
-						<span class="bigger-120">
-							<span class="blue bolder">crisenchou</span>
-							profile &copy; 2013-2014
-						</span>
-            &nbsp; &nbsp;
-            <!--<span class="action-buttons">
-							<a href="#">
-								<i class="ace-icon fa fa-twitter-square light-blue bigger-150"></i>
-							</a>
+	        <span class="bigger-120">
+					Copyright © 2013-2017 <span class="blue bolder"><a href="http://www.miitbeian.gov.cn/">粤ICP备16043112号-1</a></span>
+			</span>
 
-							<a href="#">
-								<i class="ace-icon fa fa-facebook-square text-primary bigger-150"></i>
-							</a>
-
-							<a href="#">
-								<i class="ace-icon fa fa-rss-square orange bigger-150"></i>
-							</a>
-						</span>-->
+            <div class="pull-right">-----Keep life learning,free belief!</div>
         </div>
     </div>
 </div>

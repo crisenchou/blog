@@ -11,17 +11,13 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
 
 Auth::routes();
 
+Route::get('/', 'HomeController@index');
 Route::get('/home', 'HomeController@index');
 
 Route::get('/{name}', 'HomeController@page');
-
-
 
 Route::get('/deploy/pull', function () {
     $exitCode = Artisan::call('git', [
