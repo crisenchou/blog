@@ -10,7 +10,8 @@
             </h1>
         </div><!-- /.page-header -->
 
-        <div class="row">
+
+        <div class="row well">
             <div class="col-xs-12">
                 <div class="panel panel-success">
                     <div class="panel-heading">
@@ -64,6 +65,7 @@
                 <!-- PAGE CONTENT ENDS -->
             </div><!-- /.col -->
         </div><!-- /.row -->
+
     </div><!-- /.page-content -->
 @endsection
 

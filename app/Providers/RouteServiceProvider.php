@@ -2,8 +2,8 @@
 
 namespace App\Providers;
 
-use Illuminate\Support\Facades\Route;
 use Illuminate\Foundation\Support\Providers\RouteServiceProvider as ServiceProvider;
+use Route;
 
 class RouteServiceProvider extends ServiceProvider
 {
@@ -39,7 +39,7 @@ class RouteServiceProvider extends ServiceProvider
 
         $this->mapWebRoutes();
 
-        //
+        $this->mapAdminRoutes();
     }
 
     /**
@@ -74,6 +74,18 @@ class RouteServiceProvider extends ServiceProvider
             'prefix' => 'api',
         ], function ($router) {
             require base_path('routes/api.php');
+        });
+    }
+
+
+    protected function mapAdminRoutes()
+    {
+        Route::group([
+            'middleware' => 'web',
+            'namespace' => 'App\Http\Controllers\Admin',
+            'prefix' => 'admin',
+        ], function ($router) {
+            require base_path('routes/admin.php');
         });
     }
 }

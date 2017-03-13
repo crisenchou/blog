@@ -18,14 +18,13 @@
                                 <li class="active">
                                     <a data-toggle="tab" href="#home">
                                         <i class="green ace-icon fa fa-user bigger-120"></i>
-                                        Profile
+                                        个人资料
                                     </a>
                                 </li>
-
                                 <li>
                                     <a data-toggle="tab" href="#feed">
                                         <i class="orange ace-icon fa fa-rss bigger-120"></i>
-                                        Activity Feed
+                                        成长经历
                                     </a>
                                 </li>
 
@@ -49,7 +48,7 @@
                                     <div class="row">
                                         <div class="col-xs-12 col-sm-3 center">
 															<span class="profile-picture">
-																<img class="editable img-responsive" alt="Alex's Avatar"
+																<img class="editable img-responsive" alt="crisen"
                                                                      id="avatar2"
                                                                      src="assets/images/avatars/profile-pic.jpg"/>
 															</span>
@@ -59,86 +58,57 @@
 
                                         <div class="col-xs-12 col-sm-9">
                                             <h4 class="blue">
-                                                <span class="middle">Alex M. Doe</span>
+                                                <span class="middle">crisen</span>
 
-                                                <span class="label label-purple arrowed-in-right">
-																	<i class="ace-icon fa fa-circle smaller-80 align-middle"></i>
-																	online
-																</span>
                                             </h4>
 
                                             <div class="profile-user-info">
                                                 <div class="profile-info-row">
-                                                    <div class="profile-info-name"> Username</div>
+                                                    <div class="profile-info-name"> 姓名</div>
 
                                                     <div class="profile-info-value">
-                                                        <span>alexdoe</span>
+                                                        <span>crisen</span>
                                                     </div>
                                                 </div>
 
                                                 <div class="profile-info-row">
-                                                    <div class="profile-info-name"> Location</div>
+                                                    <div class="profile-info-name"> 地址</div>
 
                                                     <div class="profile-info-value">
                                                         <i class="fa fa-map-marker light-orange bigger-110"></i>
-                                                        <span>Netherlands</span>
-                                                        <span>Amsterdam</span>
+                                                        <span>中国</span>
+                                                        <span>深圳</span>
                                                     </div>
                                                 </div>
 
                                                 <div class="profile-info-row">
-                                                    <div class="profile-info-name"> Age</div>
+                                                    <div class="profile-info-name"> 年龄</div>
 
                                                     <div class="profile-info-value">
-                                                        <span>38</span>
+                                                        <span>25</span>
                                                     </div>
                                                 </div>
 
-                                                <div class="profile-info-row">
-                                                    <div class="profile-info-name"> Joined</div>
-
-                                                    <div class="profile-info-value">
-                                                        <span>2010/06/20</span>
-                                                    </div>
-                                                </div>
-
-                                                <div class="profile-info-row">
-                                                    <div class="profile-info-name"> Last Online</div>
-
-                                                    <div class="profile-info-value">
-                                                        <span>3 hours ago</span>
-                                                    </div>
-                                                </div>
                                             </div>
 
                                             <div class="hr hr-8 dotted"></div>
 
                                             <div class="profile-user-info">
                                                 <div class="profile-info-row">
-                                                    <div class="profile-info-name"> Website</div>
+                                                    <div class="profile-info-name"> 个人主页</div>
 
                                                     <div class="profile-info-value">
-                                                        <a href="#" target="_blank">www.alexdoe.com</a>
+                                                        <a href="#" target="_blank">www.crisen.org</a>
                                                     </div>
                                                 </div>
 
                                                 <div class="profile-info-row">
                                                     <div class="profile-info-name">
-                                                        <i class="middle ace-icon fa fa-facebook-square bigger-150 blue"></i>
+                                                        github
                                                     </div>
 
                                                     <div class="profile-info-value">
-                                                        <a href="#">Find me on Facebook</a>
-                                                    </div>
-                                                </div>
-
-                                                <div class="profile-info-row">
-                                                    <div class="profile-info-name">
-                                                        <i class="middle ace-icon fa fa-twitter-square bigger-150 light-blue"></i>
-                                                    </div>
-
-                                                    <div class="profile-info-value">
-                                                        <a href="#">Follow me on Twitter</a>
+                                                        <a href="#">https://github.com/crisenchou </a>
                                                     </div>
                                                 </div>
                                             </div>
@@ -153,27 +123,20 @@
                                                 <div class="widget-header widget-header-small">
                                                     <h4 class="widget-title smaller">
                                                         <i class="ace-icon fa fa-check-square-o bigger-110"></i>
-                                                        Little About Me
+                                                        兴趣爱好
                                                     </h4>
                                                 </div>
 
                                                 <div class="widget-body">
                                                     <div class="widget-main">
                                                         <p>
-                                                            My job is mostly lorem ipsuming and dolor sit ameting as
-                                                            long as consectetur adipiscing elit.
+                                                            喜欢做的事情
                                                         </p>
                                                         <p>
-                                                            Sometimes quisque commodo massa gets in the way and sed
-                                                            ipsum porttitor facilisis.
+                                                            喜欢的食物
                                                         </p>
                                                         <p>
-                                                            The best thing about my job is that vestibulum id ligula
-                                                            porta felis euismod and nullam quis risus eget urna mollis
-                                                            ornare.
-                                                        </p>
-                                                        <p>
-                                                            Thanks for visiting my profile.
+                                                            梦想
                                                         </p>
                                                     </div>
                                                 </div>
@@ -185,7 +148,7 @@
                                                 <div class="widget-header widget-header-small header-color-blue2">
                                                     <h4 class="widget-title smaller">
                                                         <i class="ace-icon fa fa-lightbulb-o bigger-120"></i>
-                                                        My Skills
+                                                        我的技能
                                                     </h4>
                                                 </div>
 
@@ -199,7 +162,7 @@
                                                                 </div>
 
                                                                 <div class="space-2"></div>
-                                                                Graphic Design
+                                                                PHP&mysql
                                                             </div>
 
                                                             <div class="grid3 center">

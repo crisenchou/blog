@@ -8,6 +8,24 @@ class HomeController extends Controller
 {
 
 
+    protected $tempPath = 'web';
+
+    public function __construct()
+    {
+        $menus = config('menus');
+        view()->share('menus', $menus);
+    }
+
+
+    protected function view($view = null, $data = [], $mergeData = [])
+    {
+        if ($this->tempPath) {
+            $view = $this->tempPath . '.' . $view;
+        }
+        return view($view, $data, $mergeData);
+    }
+
+
     /**
      * Show the application dashboard.
      *
@@ -15,13 +33,13 @@ class HomeController extends Controller
      */
     public function index()
     {
-        return view('home');
+        return $this->view('home');
     }
 
 
-    public function page($name)
+    public function profile()
     {
-        return view($name);
+        return $this->view('profile');
     }
 
 }

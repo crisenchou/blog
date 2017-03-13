@@ -1,16 +1,11 @@
 @extends('layouts.index')
 @section('page-content')
-
-
-
     <div class="page-content">
-
         <div class="page-header">
             <h1>
                 我的足迹
             </h1>
         </div><!-- /.page-header -->
-
         <div class="row">
             <div class="col-xs-12">
                 <!-- PAGE CONTENT BEGINS -->
@@ -19,9 +14,9 @@
                         <div class="col-xs-12 col-sm-10 col-sm-offset-1">
                             <div class="timeline-container">
                                 <div class="timeline-label">
-													<span class="label label-primary arrowed-in-right label-lg">
-														<b>Today</b>
-													</span>
+                                    <span class="label label-primary arrowed-in-right label-lg">
+                                        <b>Today</b>
+                                    </span>
                                 </div>
 
                                 <div class="timeline-items">

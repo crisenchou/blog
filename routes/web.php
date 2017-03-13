@@ -12,12 +12,9 @@
 */
 
 
-Auth::routes();
-
 Route::get('/', 'HomeController@index');
 Route::get('/home', 'HomeController@index');
-
-Route::get('/{name}', 'HomeController@page');
+Route::get('/profile', 'HomeController@profile');
 
 Route::get('/deploy/pull', function () {
     $exitCode = Artisan::call('git', [
