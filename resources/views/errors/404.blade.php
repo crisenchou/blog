@@ -1,8 +1,9 @@
 @extends('layouts.index')
-@section('content')
+@section('page-content')
     <div class="row">
         <div class="col-xs-12">
             <!-- PAGE CONTENT BEGINS -->
+
             <div class="error-container">
                 <div class="well">
                     <h1 class="grey lighter smaller">
@@ -13,7 +14,7 @@
                         Page Not Found
                     </h1>
 
-                    <hr>
+                    <hr/>
                     <h3 class="lighter smaller">We looked everywhere but we couldn't find it!</h3>
 
                     <div>
@@ -21,8 +22,8 @@
 												<span class="input-icon align-middle">
 													<i class="ace-icon fa fa-search"></i>
 
-													<input class="search-query" placeholder="Give it a search..."
-                                                           type="text">
+													<input type="text" class="search-query"
+                                                           placeholder="Give it a search..."/>
 												</span>
                             <button class="btn btn-sm" type="button">Go!</button>
                         </form>
@@ -48,7 +49,7 @@
                         </ul>
                     </div>
 
-                    <hr>
+                    <hr/>
                     <div class="space"></div>
 
                     <div class="center">
@@ -67,6 +68,5 @@
 
             <!-- PAGE CONTENT ENDS -->
         </div><!-- /.col -->
-    </div>
-
+    </div><!-- /.row -->
 @endsection
