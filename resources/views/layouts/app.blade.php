@@ -3,17 +3,15 @@
 <head>
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
     <meta charset="utf-8"/>
-    <title>@yield('title','app')</title>
+    <title>@yield('title','crisenchou')</title>
     <meta name="description" content="overview &amp; stats"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0"/>
 
     <!-- bootstrap & fontawesome -->
     <link rel="stylesheet" href="{{asset('assets/css/bootstrap.min.css')}}"/>
     <link rel="stylesheet" href="{{asset('assets/font-awesome/4.5.0/css/font-awesome.min.css')}}"/>
-
     <!-- page specific plugin styles -->
 @stack('css')
-
 <!-- text fonts -->
     <link rel="stylesheet" href="{{asset('assets/css/fonts.googleapis.com.css')}}"/>
 
@@ -44,7 +42,25 @@
 </head>
 <body class="no-skin">
 @section('navbar')
-    @include('partial.navbar')
+    <div id="navbar" class="navbar navbar-default  ace-save-state">
+        <div class="navbar-container ace-save-state container" id="navbar-container">
+            <button type="button" class="navbar-toggle menu-toggler pull-left" id="menu-toggler" data-target="#sidebar">
+                <span class="sr-only">Toggle sidebar</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+
+            <div class="navbar-header pull-left">
+                <a href="/" class="navbar-brand">
+                    <small>
+                        <i class="fa fa-leaf"></i>
+                        crisenchou
+                    </small>
+                </a>
+            </div>
+        </div><!-- /.navbar-container -->
+    </div>
 @show
 <div class="main-container ace-save-state" id="main-container">
     <script type="text/javascript">
@@ -54,15 +70,22 @@
         }
     </script>
     @section('sidebar')
-        @include('partial.sidebar')
+        <div id="sidebar" class="sidebar h-sidebar navbar-collapse collapse ace-save-state">
+            <script type="text/javascript">
+                try {
+                    ace.settings.loadState('sidebar')
+                } catch (e) {
+                }
+            </script>
+            @include('partial.menus')
+        </div>
     @show
     <div class="main-content">
         <div class="main-content-inner">
             @section('breadcrumbs')
-                @include('partial.breadcrumbs')
             @show
             <div class="page-content">
-                @include('partial.settings')
+                {{--@include('partial.settings')--}}
                 @yield('page-content')
             </div><!-- /.page-content -->
         </div>
@@ -88,6 +111,6 @@
 
 <!-- ace scripts -->
 <script src="{{asset('assets/js/ace-elements.min.js')}}"></script>
-<script src="{{aseet('assets/js/ace.min.js')}}"></script>
+<script src="{{asset('assets/js/ace.min.js')}}"></script>
 </body>
 </html>

@@ -1,4 +1,4 @@
-@extends('layouts.index')
+@extends('layouts.app')
 @section('page-content')
     <div class="page-content">
         <div class="page-header">

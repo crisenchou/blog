@@ -11,14 +11,7 @@
 |
 */
 
-
-Route::get('/', 'HomeController@index');
-Route::get('/home', 'HomeController@index');
-Route::get('/profile', 'HomeController@profile');
-
-Route::get('/deploy/pull', function () {
-    $exitCode = Artisan::call('git', [
-        'action' => 'pull'
-    ]);
-    return $exitCode;
-});
+Route::get('/', 'HomeController@index')->name('index');
+Route::get('/post/{id}', 'HomeController@post')->name('post');
+Route::get('/home', 'HomeController@index')->name('home');
+Route::get('/profile', 'HomeController@profile')->name('profile');;

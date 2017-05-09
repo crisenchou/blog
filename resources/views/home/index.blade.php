@@ -1,16 +1,11 @@
-@extends('layouts.index')
-
-
+@extends('layouts.app')
 @section('page-content')
     <div class="page-content">
-
         <div class="page-header">
             <h1>
                 心情随笔
             </h1>
         </div><!-- /.page-header -->
-
-
         <div class="row well">
             <div class="col-xs-12">
                 <div class="panel panel-success">

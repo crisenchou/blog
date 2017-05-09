@@ -2,26 +2,13 @@
 
 namespace App\Http\Controllers;
 
-use Illuminate\Http\Request;
+use App\Post;
 
 class HomeController extends Controller
 {
 
-
-    protected $tempPath = 'web';
-
-    public function __construct()
-    {
-        $menus = config('menus');
-        view()->share('menus', $menus);
-    }
-
-
     protected function view($view = null, $data = [], $mergeData = [])
     {
-        if ($this->tempPath) {
-            $view = $this->tempPath . '.' . $view;
-        }
         return view($view, $data, $mergeData);
     }
 
@@ -33,7 +20,15 @@ class HomeController extends Controller
      */
     public function index()
     {
-        return $this->view('home');
+        $post = Post::get();
+        return $this->view('home.index', compact('post'));
+    }
+
+
+    public function post($id)
+    {
+        $post = Post::find($id);
+        return $this->view('home.post', compact('post'));
     }
 
 
