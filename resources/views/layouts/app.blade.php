@@ -62,7 +62,7 @@
         </div><!-- /.navbar-container -->
     </div>
 @show
-<div class="main-container ace-save-state" id="main-container">
+<div class="main-container ace-save-state container" id="main-container">
     <script type="text/javascript">
         try {
             ace.settings.loadState('main-container')

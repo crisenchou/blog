@@ -8,56 +8,19 @@
         </div><!-- /.page-header -->
         <div class="row well">
             <div class="col-xs-12">
-                <div class="panel panel-success">
-                    <div class="panel-heading">
-                        <h3 class="panel-title"><a href="#">记一次proc_open没有开启心得感悟</a></h3>
+                @foreach($posts as $post)
+                    <div class="panel panel-success">
+                        <div class="panel-heading">
+                            <h3 class="panel-title"><a
+                                        href="{{route('post',['id'=>$post->id])}}">{{$post->title}}</a></h3>
+                        </div>
+                        <div class="panel-body">
+                            {{$post->summary}}
+                            <a href="{{route('post',['id'=>$post->id])}}">{{$post->title}}">阅读全文</a>
+                        </div>
                     </div>
-                    <div class="panel-body">
-
-                        摘要: 引言: 今天在部署服务器的时候，使用composer来安装依赖。遇到了 The Process class relies on proc_open, which is not
-                        available on your PHP installation. 开始的时候，我有些不知所措，于是冷静下来思考一番，然阅读全文
-                        <a href="#">阅读全文</a>
-                    </div>
-                </div>
-
-                <div class="panel panel-success">
-                    <div class="panel-heading">
-                        <h3 class="panel-title"><a href="#">记一次proc_open没有开启心得感悟</a></h3>
-                    </div>
-                    <div class="panel-body">
-
-                        摘要: 引言: 今天在部署服务器的时候，使用composer来安装依赖。遇到了 The Process class relies on proc_open, which is not
-                        available on your PHP installation. 开始的时候，我有些不知所措，于是冷静下来思考一番，然阅读全文
-                        <a href="#">阅读全文</a>
-                    </div>
-                </div>
-
-
-                <div class="panel panel-success">
-                    <div class="panel-heading">
-                        <h3 class="panel-title"><a href="#">记一次proc_open没有开启心得感悟</a></h3>
-                    </div>
-                    <div class="panel-body">
-
-                        摘要: 引言: 今天在部署服务器的时候，使用composer来安装依赖。遇到了 The Process class relies on proc_open, which is not
-                        available on your PHP installation. 开始的时候，我有些不知所措，于是冷静下来思考一番，然阅读全文
-                        <a href="#">阅读全文</a>
-                    </div>
-                </div>
-
-
-                <div class="panel panel-success">
-                    <div class="panel-heading">
-                        <h3 class="panel-title"><a href="#">记一次proc_open没有开启心得感悟</a></h3>
-                    </div>
-                    <div class="panel-body">
-
-                        摘要: 引言: 今天在部署服务器的时候，使用composer来安装依赖。遇到了 The Process class relies on proc_open, which is not
-                        available on your PHP installation. 开始的时候，我有些不知所措，于是冷静下来思考一番，然阅读全文
-                        <a href="#">阅读全文</a>
-                    </div>
-                </div>
-                <!-- PAGE CONTENT ENDS -->
+            @endforeach
+            <!-- PAGE CONTENT ENDS -->
             </div><!-- /.col -->
         </div><!-- /.row -->
 

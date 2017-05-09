@@ -20,8 +20,8 @@ class HomeController extends Controller
      */
     public function index()
     {
-        $post = Post::get();
-        return $this->view('home.index', compact('post'));
+        $posts = Post::get();
+        return $this->view('home.index', compact('posts'));
     }
 
 
