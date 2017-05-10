@@ -1,29 +1,19 @@
 @extends('layouts.app')
 @section('page-content')
-    <div class="row">
-        <div class="col-sm-12">
-            <h4>Headings & Paragraphs</h4>
-            <hr/>
-            <h1>h1. Heading 1</h1>
-            <p class="lead">
-                Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Duis mollis, est non
-                commodo luctus.
-            </p>
-            <h2>h2. Heading 2</h2>
-            <p>
-                Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec
-                ullamcorper nulla non metus auctor fringilla. Duis mollis, est non commodo luctus, nisi erat
-                porttitor ligula, eget lacinia odio sem nec elit. Donec ullamcorper nulla non metus auctor
-                fringilla.
-            </p>
-            <h3>h3. Heading 3</h3>
-            <p>
-                Nullam quis risus eget urna mollis ornare vel eu leo. Cum sociis natoque penatibus et magnis dis
-                parturient montes, nascetur ridiculus mus. Nullam id dolor id nibh ultricies vehicula.
-            </p>
-            <h4>h4. Heading 4</h4>
-            <h5>h5. Heading 5</h5>
-            <h6>h6. Heading 6</h6>
-        </div><!-- /.col -->
-    </div>
+
+    <div class="page-header">
+        <h1>
+            {{$post->title}}
+        </h1>
+    </div><!-- /.page-header -->
+    <div class="page-content">
+        <div class="row">
+            <div class="col-xs-8">
+                {!! $post->content  !!}
+            </div><!-- /.col -->
+            <div class="col-xs-4">
+                recommend
+            </div><!-- /.col -->
+        </div><!-- /.row -->
+    </div><!-- /.page-content -->
 @endsection

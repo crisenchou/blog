@@ -34,7 +34,7 @@ class HomeController extends Controller
 
     public function profile()
     {
-        return $this->view('profile');
+        return $this->view('home.profile');
     }
 
 }
