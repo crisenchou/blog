@@ -12,8 +12,7 @@
         "predis/predis": "1.0.*",
         "mews/captcha": "~2.0",
         "torann/geoip": "0.2.*",
-        "joyqi/hyper-down": "dev-master",
-        "graham-campbell/markdown": "^7.1"
+        "erusev/parsedown": "1.6.2"
     },
     "require-dev": {
         "fzaninotto/faker": "~1.4",
